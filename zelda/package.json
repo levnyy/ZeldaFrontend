@@ -3,12 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "concurrently --kill-others \"npm run server\" \"npm run lint-watch\" \"next dev\"",
-    "build": "concurrently --kill-others \"npm run server\" \"npm run lint-watch\" \"next build\"",
-    "start": "concurrently --kill-others \"npm run server\" \"npm run lint-watch\" \"next start\"",
-    "lint": "next lint",
-    "lint-watch": "nodemon --watch . --exec next lint",
-    "server": "json-server --watch db.json --port 3001"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
     "next": "13.2.4",
