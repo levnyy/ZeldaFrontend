@@ -1,7 +1,7 @@
 import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
 import Users from "../lib/api/Users"
-import { useGlobalContext } from "../store"
+import { useGlobalContext } from "@/store"
 import styles from "./login.module.css"
 import { toast } from "react-toastify"
 

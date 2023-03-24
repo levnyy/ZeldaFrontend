@@ -9,7 +9,6 @@ export default function Navigation() {
     return (
         <nav className={styles.navigation}>
             <ul>
-                <li><a href="#">Login</a></li>
                 <li><a href="#">Locations</a></li>
                 <li><a href='#'>Bosses</a></li>
                 <li><a href='#'>Characters</a></li>
