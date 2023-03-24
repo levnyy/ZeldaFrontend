@@ -1,19 +1,13 @@
-import Styles from './header.module.css'
-import Link from 'next/link'; 
-import Navigation from '../components/Navigation';
-
+import Navigation from '../Navigation/index';
+import styles from './Header.module.css';
 
 const Header = () => (
     <header>
-        <div className={Styles.Header}>
-                <div className="header__logo">
-                    <Link to="/">
-                        <img src={logo} alt="logo" />
-                    </Link>
-                    <Navigation/>
-                </div>
+        <div className={styles.home}>
+            <img src="cucco.png" className={styles.image}></img>
+            <h1 className='title'>Zelda</h1>
+            <Navigation/>
         </div>
-        </header>
-    );
-
+    </header>
+)
 export default Header;

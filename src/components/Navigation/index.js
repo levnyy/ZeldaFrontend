@@ -1,6 +1,7 @@
 import { useGlobalContext } from '@/store/index.js';
-import Header from '../components/Header.js';
+
 import styles from './Navigation.module.css';
+import Link from "next/link";
 
 export default function Navigation() {
 
