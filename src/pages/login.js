@@ -3,7 +3,6 @@ import { useEffect, useState } from "react"
 import Users from "../lib/api/Users"
 import { useGlobalContext } from "../store"
 import styles from "./login.module.css"
-import Link from "next/link"
 import { toast } from "react-toastify"
 
 
