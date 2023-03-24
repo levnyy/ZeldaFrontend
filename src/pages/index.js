@@ -1,9 +1,9 @@
+import styles from '/src/styles/index.module.css'
 
 export default function Document() {
     return (
         <div>
-            <h1> Omg</h1>
-            <p>asjfhasdköghasdjkgashdkjgasdhgja</p>
+            <img src="background.jpg"className={styles.zelda}/>
         </div>
     )
 }

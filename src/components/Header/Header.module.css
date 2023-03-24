@@ -13,3 +13,7 @@
     display: inline-flex;
     align-items: center;
 }
+.font {
+    height: 45px;
+    margin-left: 10px;
+}

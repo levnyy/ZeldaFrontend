@@ -5,10 +5,8 @@ import Link from "next/link";
 const Header = () => (
     <header>
         <div className={styles.home}>
-            <Link href={"/"}/>
-
+            <a href="https://www.fontspace.com/category/zelda"><img src="https://see.fontimg.com/api/renderfont4/15Lv/eyJyIjoiZnMiLCJoIjo4MSwidyI6MTI1MCwiZnMiOjY1LCJmZ2MiOiIjMDAwMDAwIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/emVsZGE/the-wild-breath-of-zelda.png" alt="Zelda fonts" className={styles.font}/></a>
             <a href='#'><img src="cucco.png" className={styles.image}></img></a>
-            <h1 className='title'>Zelda</h1>
             <Navigation/>
         </div>
     </header>
