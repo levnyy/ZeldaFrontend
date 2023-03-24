@@ -1,5 +1,6 @@
 .image {
-    height: 50px;
+    height: 100%;
+    width: 100%;
 }
 
 .home {
@@ -17,3 +18,5 @@
     height: 45px;
     margin-left: 10px;
 }
+
+

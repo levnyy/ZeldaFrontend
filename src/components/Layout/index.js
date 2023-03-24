@@ -1,12 +1,13 @@
 import Header from '../Header/index.js';
-
-export default function Layout({children}) {
+import Body from '../Body/index.js'
+import styles from './Layout.module.css'
+export default function Layout() {
     return (
         <>
             <Header />
-            <main />
+            <main className={styles.margin} />
             <div>
-                {children}
+                <Body className={styles.zelda}/>
             </div>
             <main/>
         </>

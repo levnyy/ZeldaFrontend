@@ -1,9 +1,9 @@
 import styles from '/src/styles/index.module.css'
 
-export default function Document() {
+export default function IndexPage() {
     return (
         <div>
-            <img src="background.jpg"className={styles.zelda}/>
+
         </div>
     )
 }
