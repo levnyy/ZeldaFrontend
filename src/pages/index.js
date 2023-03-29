@@ -1,18 +1,11 @@
-import PostsAPI from "../../../Users/kofmehll/ZeldaFrontend/src/lib/api/Posts"
+import PostsAPI from "src/lib/api/Posts"
 import Post from "../components/Post"
 
 export default function Home({ posts }) {
 
     return (
         <div>
-            <h1>Home Site</h1>
-            {posts.map((post) => {
-                return (
-                    <div key={`post-${post.id}`}>
-                        <Post props={post} />
-                    </div>
-                )
-            })}
+            <img src="background.jpg" className={styles.zelda}/>
         </div>
     )
 }

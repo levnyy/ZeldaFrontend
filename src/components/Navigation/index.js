@@ -1,22 +1,35 @@
-import { useGlobalContext } from '@/store/index.js';
-
-import styles from './Navigation.module.css';
 import Link from "next/link";
+import styles from "./Navigation.module.css"
+import { useGlobalContext } from "../../store/index";
+import { useRouter } from "next/router";
 
 export default function Navigation() {
 
-    const {session, logout} = useGlobalContext();
+    const { session, logout } = useGlobalContext()
+    const router = useRouter()
+
     return (
         <nav className={styles.navigation}>
-            <ul>
-                <li><a href="/locations">Locations</a></li>
-                <li><a href='/bosses'>Bosses</a></li>
-                <li><a href='/characters'>Characters</a></li>
-                {session && <li><Link href="/">Logout</Link></li>}
-                <li>
-                    {session ? <Link href="/" onclick={(e) => logout()}>Logout</Link> : <Link href="/login">Login</Link>}
-                </li>
-            </ul>
+            <div>
+                <ul>
+                    <li>
+                        <Link href="/bosses">bosses</Link>
+                    </li>
+                    <li>
+                        <Link href="/character">charakters</Link>
+                    </li>
+                    <li>
+                        <Link href="/creatures">creatures</Link>
+                    </li>
+                    <li>
+                        <Link href="/">Home</Link>
+                    </li>
+                    {session && <li><Link href="/profile">Profile</Link></li>}
+                    <li>
+                        {session ? <Link href="/login"><a onClick={(e) => logout()} className="nav-link">Logout</a></Link> : <Link href="/login"><a className={"nav-link " + (router.pathname == "/login" && "active")}>Login</a></Link>}
+                    </li>
+                </ul>
+            </div>
         </nav>
     )
 }
