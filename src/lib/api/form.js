@@ -4,8 +4,8 @@ import {toast} from 'react-toastify';
 const URL = `${BASE_URL}/posts`
 
 const ZeldaAPI = {
-create(post, token) {
-const data = postJSON(URL, { body: post, token })
+create(form, token) {
+const data = postJSON(URL, { body: form, token })
 toast.success("Successful created post")
 return data
 },
@@ -15,15 +15,15 @@ return getJSON(`${URL}?_sort=id&_order=desc`)
 read(id) {
 return getJSON(`${URL}/${id}`)
 },
-update(post, token) {
-const data = putJSON(`${URL}/${post.id}`, { body: post, token })
+update(form, token) {
+const data = putJSON(`${URL}/${form.id}`, { body: form, token })
 toast.success("Successful updated post")
 return data
 },
-delete(post, token) {
-const data = null
+delete(form ,token) {
+let data = null
 try {
-data = deleteJSON(`${URL}/${post.id}`, { token })
+data = deleteJSON(`${URL}/${form.id}`, { token })
 } catch (error) {
 toast.error("The post couldn't be deleted")
 }

@@ -9,7 +9,7 @@ export default function IndexPage() {
     )
 }
 
-export default async function getStaticProps() {
+export async function getStaticProps() {
     const form = await ZeldaAPI.readAll()
     return {
         props: {

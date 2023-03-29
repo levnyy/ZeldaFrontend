@@ -16,11 +16,11 @@ function createFetchFunction(method) {
     _params.headers["Authorization"] = `Bearer ${_params.token}`
     }
     
-    const response = await fetch(url, _params)
+    const response =  await fetch(url, _params)
     
     if (!response.ok) {
     
-    if(response.status == 401) {
+    if(response.status === 401) {
     const text = await response.text()
     if(text.includes("expired")) {
     localStorage.removeItem("session")
@@ -32,7 +32,7 @@ function createFetchFunction(method) {
     error.response = response
     throw error
     }
-    
+
     const data = await response.json()
     return data
     }
