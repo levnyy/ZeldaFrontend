@@ -1,16 +1,17 @@
-import Header from '../Header/index.js';
-import styles from "@/styles/index.module.css";
+import Link from 'next/link';
+import React from 'react';
+import styles from './Post.module.css'
 
-export default function Layout({children}) {
+export default function Post({props}) {
     return (
-        <>
-            <Header />
-            <main />
+        <div className={styles['post-card-styling']}>
             <div>
-                <img src="background.jpg"className={styles.zelda}/>
-                {children}
+                <p className={styles['card-title']}>{props.title}</p>
+                <p>{props.text}</p>
+                <div>
+                    <Link href={`posts/${props.id}`}><a className={styles['card-link']}>More Details</a></Link>
+                </div>
             </div>
-            <main/>
-        </>
-    )
+        </div>
+    );
 }

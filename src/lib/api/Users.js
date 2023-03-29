@@ -1,7 +1,7 @@
 import { BASE_URL, getJSON, postJSON } from "."
 //import SignUpPage from "../../pages/signup"
 
-const URL = "http://localhost:3001"
+const URL = "http://localhost:3000"
 
 const AuthenticationAPI =  {
     login(user) {
