@@ -76,7 +76,7 @@ export default function LoginPage() {
     }
 
     return (
-        <div className={styles['login-container']}>
+        <div>
             <form onSubmit={handleSubmit}>
                 <h2>Login</h2>
                 <div>

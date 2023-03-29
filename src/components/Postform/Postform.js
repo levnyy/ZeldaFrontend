@@ -1,8 +1,8 @@
 import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
-import PostsAPI from "../../../Users/kofmehll/ZeldaFrontend/src/lib/api/Posts"
-import styles from "./PostForm.module.css"
-import { useGlobalContext } from "../store/index"
+import PostsAPI from "src/lib/api/Posts"
+
+import { useGlobalContext } from "../../store/index"
 
 const defaultModel = {
     title: "",

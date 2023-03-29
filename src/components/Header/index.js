@@ -1,6 +1,6 @@
 import Navigation from '../Navigation/index';
 import styles from './Header.module.css';
-import Link from "next/link";
+
 
 const Header = () => (
     <header>

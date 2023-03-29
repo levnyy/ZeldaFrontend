@@ -1,6 +1,5 @@
 import PostsAPI from "src/lib/api/Posts"
-import Post from "../components/Post"
-
+import styles from "../styles/Home.module.css"
 export default function Home({ posts }) {
 
     return (
@@ -10,8 +9,3 @@ export default function Home({ posts }) {
     )
 }
 
-export async function getStaticProps() {
-    const posts = await PostsAPI.readAll()
-    return {
-        props: { posts }, revalidate: 1 }
-}

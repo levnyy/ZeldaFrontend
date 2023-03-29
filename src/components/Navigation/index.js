@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "next/Link";
 import styles from "./Navigation.module.css"
 import { useGlobalContext } from "../../store/index";
 import { useRouter } from "next/router";
@@ -16,7 +16,7 @@ export default function Navigation() {
                         <Link href="/bosses">bosses</Link>
                     </li>
                     <li>
-                        <Link href="/character">charakters</Link>
+                        <Link href="/character">characters</Link>
                     </li>
                     <li>
                         <Link href="/creatures">creatures</Link>
@@ -26,7 +26,7 @@ export default function Navigation() {
                     </li>
                     {session && <li><Link href="/profile">Profile</Link></li>}
                     <li>
-                        {session ? <Link href="/login"><a onClick={(e) => logout()} className="nav-link">Logout</a></Link> : <Link href="/login"><a className={"nav-link " + (router.pathname == "/login" && "active")}>Login</a></Link>}
+                        {session ? <Link href="/" onclick={(e) => logout()}>Logout</Link> : <Link href="/login">Login</Link>}
                     </li>
                 </ul>
             </div>
