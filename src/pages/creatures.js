@@ -7,10 +7,3 @@ export default function IndexPage({characters}) {
     </div>
   )
 }
-
-/*export async function getStaticProps() {
-  const posts = await PostsAPI.readAll()
-  return {
-        props: {posts}, revalidate: 1
-  }
-}*/
