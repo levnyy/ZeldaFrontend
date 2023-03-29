@@ -1,5 +1,5 @@
 import styles from '/src/styles/index.module.css'
-import ZeldaAPI from '/src/api/form'
+import ZeldaAPI from '../lib/api/form'
 
 export default function IndexPage() {
     return (
@@ -9,9 +9,11 @@ export default function IndexPage() {
     )
 }
 
-export default function getStaticProps() {
+export default async function getStaticProps() {
     const form = await ZeldaAPI.readAll()
     return {
         props: {
-            form }, revalidate: 1}
-        }
+            form
+        }, revalidate: 1
+    }
+}
