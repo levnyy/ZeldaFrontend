@@ -9,9 +9,9 @@ export default function Navigation() {
     return (
         <nav className={styles.navigation}>
             <ul>
-                <li><a href="#">Locations</a></li>
-                <li><a href='#'>Bosses</a></li>
-                <li><a href='#'>Characters</a></li>
+                <li><a href="/locations">Locations</a></li>
+                <li><a href='/bosses'>Bosses</a></li>
+                <li><a href='/characters'>Characters</a></li>
                 {session && <li><Link href="/">Logout</Link></li>}
                 <li>
                     {session ? <Link href="/" onclick={(e) => logout()}>Logout</Link> : <Link href="/login">Login</Link>}
