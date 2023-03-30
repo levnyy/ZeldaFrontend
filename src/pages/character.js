@@ -2,9 +2,7 @@ import styles from '../styles/character.module.css'
 export default function IndexPage() {
     return (
         <div>
-            <h1>Characters</h1>
-
-
+            <h1 className={styles.title}>CHARACTERS</h1>
             <div className={styles.layout}>
                 <div>
                     <div className={styles.text}>

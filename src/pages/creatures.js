@@ -3,7 +3,7 @@ import styles from '../styles/creatures.module.css'
 export default function IndexPage({characters}) {
   return (
     <div>
-        <h1>CREATURES</h1>
+        <h1 className={styles.title}>CREATURES</h1>
         <div className={styles.layout}>
             <div>
                 <div className={styles.text}>

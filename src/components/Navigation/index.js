@@ -13,13 +13,13 @@ export default function Navigation() {
             <div>
                 <ul>
                     <li>
-                        <Link href="/bosses">bosses</Link>
+                        <Link href="/bosses">Bosses</Link>
                     </li>
                     <li>
-                        <Link href="/character">characters</Link>
+                        <Link href="/character">Characters</Link>
                     </li>
                     <li>
-                        <Link href="/creatures">creatures</Link>
+                        <Link href="/creatures">Creatures</Link>
                     </li>
                     <li>
                         <Link href="/">Home</Link>
