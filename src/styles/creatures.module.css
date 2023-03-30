@@ -1,4 +1,35 @@
 .image{
-    width: 100%;
-    hight: 33%;
+    width: 400px;
+    hight: 300px;
+
 }
+
+.layout {
+
+}
+.blue{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.cucco{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.bluppe{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.text{
+    text-align: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
