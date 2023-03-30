@@ -73,6 +73,7 @@ export default function IndexPage() {
                     </div>
                     <div className={styles.cucco}>
                         <img src='rivali.jpg' className={styles.image}/>
+
                     </div>
                 </div>
 
