@@ -3,34 +3,39 @@ import {toast} from 'react-toastify';
 
 const URL = `${BASE_URL}/posts`
 
-const PostsAPI = {
+const ZeldaAPI = {
     create(post, token) {
         const data = postJSON(URL, { body: post, token })
         toast.success("Successful created post")
         return data
     },
-    readAll() {
-        return getJSON(`${URL}?_sort=id&_order=desc`)
-    },
-    read(id) {
-        return getJSON(`${URL}/${id}`)
-    },
+    
     update(post, token) {
         const data = putJSON(`${URL}/${post.id}`, { body: post, token })
         toast.success("Successful updated post")
         return data
     },
-    delete(post, token) {
-        let data = null
-        try {
-            data = deleteJSON(`${URL}/${post.id}`, { token })
-        } catch (error) {
-            toast.error("The post couldn't be deleted")
-        }
-        
-        toast.success("Successful deleted post")
-        return data
+    getLocations() {
+        return getJSON(`${URL}/locations`)
+    },
+    getLocationsById(id) {
+        return getJSON(`${URL}/locations/${id}`)
+    },
+    getCreatures() {
+        return getJSON(`${URL}/creatures`)
+    },
+    getCreaturesById(id) {
+        return getJSON(`${URL}/creatures/${id}`)
+    },
+    getBosses() {
+        return getJSON(`${URL}/bosses`)
+    },
+    getBossesById(id) {
+        return getJSON(`${URL}/bosses/${id}`)
+    },
+    getCharacters() {
+        return getJSON(`${URL}/characters`)
     }
 }
 
-export default PostsAPI
+export default ZeldaAPI

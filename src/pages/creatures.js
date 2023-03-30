@@ -1,3 +1,4 @@
+import ZeldaAPI from '@/lib/api/Posts'
 import styles from '../styles/creatures.module.css'
 
 export default function IndexPage({characters}) {
@@ -11,6 +12,7 @@ export default function IndexPage({characters}) {
                 </div>
                 <div className={styles.cucco}>
                     <img src='Cucco_New.png' className={styles.image}/>
+                    
                 </div>
             </div>
             <div>
@@ -33,4 +35,9 @@ export default function IndexPage({characters}) {
     </div>
   )
 }
-
+export async function getStaticProps() {
+    const creatures = await ZeldaAPI.getCharacters()
+    return {
+        props: {creatures}
+    }
+}
