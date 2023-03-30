@@ -1,3 +1,15 @@
 body {
     margin: 0 ;
 }
+
+@font-face {
+    font-family: Zelda ;
+    src: url(../fonts/The\ Wild\ Breath\ of\ Zelda.otf);
+}
+h1 {
+    font-family: Zelda;
+}
+
+h2 {
+    font-family: Zelda;
+}
