@@ -16,7 +16,7 @@ export default function Navigation() {
                         <Link href="/bosses">Bosses</Link>
                     </li>
                     <li>
-                        <Link href="/character">Characters</Link>
+                        <Link href="/characters">Characters</Link>
                     </li>
                     <li>
                         <Link href="/creatures">Creatures</Link>

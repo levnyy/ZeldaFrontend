@@ -35,9 +35,9 @@ export default function CreaturesPage({characters}) {
     </div>
   )
 }
-export async function getStaticProps() {
-    const creatures = await ZeldaAPI.getCharacters()
-    return {
-        props: {creatures}
-    }
-}
+// export async function getStaticProps() {
+//     const creatures = await ZeldaAPI.getCharacters()
+//     return {
+//         props: {creatures}
+//     }
+// }

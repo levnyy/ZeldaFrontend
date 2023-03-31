@@ -1,5 +1,19 @@
 import styles from '../styles/character.module.css'
-export default function CharacterPage() {
+import Bosses from "@/components/Bosses";
+import React, {useEffect, useState} from "react";
+
+const [characters, setCharacters] = useState([]);
+useEffect(() => {
+    const fetchCharacters = async () => {
+        const response = await fetch('http://localhost:8080/bosses');
+        const data = await response.json();
+        setCharacters(data);
+    };
+
+    fetchCharacters();
+}, []);
+
+export default function CharactersPage() {
     return (
         <div>
             <h1 className={styles.title}>CHARACTERS</h1>
@@ -7,6 +21,9 @@ export default function CharacterPage() {
                 <div>
                     <div className={styles.text}>
                         <h1>BADDEK</h1>
+                        {bosses.map((boss) => (
+                            <Bosses key={boss.id_bosses} props={boss} />
+                        ))}
                     </div>
                     <div className={styles.cucco}>
                         <img src='baddek.png' className={styles.image}/>
