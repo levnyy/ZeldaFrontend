@@ -11,7 +11,6 @@ export default function Bosses({ props }) {
                 <p>Weakness: {props.weakness || 'Unknown'}</p>
                 <div>
                     <Link href={`bosses/${props.id_bosses}`}>
-                        <a className={styles['card-link']}>More Details</a>
                     </Link>
                 </div>
             </div>
