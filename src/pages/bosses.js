@@ -52,3 +52,4 @@ const BossesPage = () => {
 
     )
 }
+export default BossesPage;
