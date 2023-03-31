@@ -1,15 +1,18 @@
 import Link from 'next/link';
 import React from 'react';
+import styles from './Bosses.module.css';
 
-
-export default function Post({props}) {
+export default function Bosses({ props }) {
     return (
         <div className={styles['post-card-styling']}>
             <div>
-                <p className={styles['card-title']}>{props.title}</p>
-                <p>{props.text}</p>
+                <p className={styles['card-title']}>{props.name}</p>
+                <p>Health: {props.health}</p>
+                <p>Weakness: {props.weakness || 'Unknown'}</p>
                 <div>
-                    <Link href={`posts/${props.id}`}><a className={styles['card-link']}>More Details</a></Link>
+                    <Link href={`bosses/${props.id_bosses}`}>
+                        <a className={styles['card-link']}>More Details</a>
+                    </Link>
                 </div>
             </div>
         </div>
