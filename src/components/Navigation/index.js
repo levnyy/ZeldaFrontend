@@ -22,6 +22,9 @@ export default function Navigation() {
                         <Link href="/creatures">Creatures</Link>
                     </li>
                     <li>
+                        <Link href="/locations">Locations</Link>
+                    </li>
+                    <li>
                         <Link href="/">Home</Link>
                     </li>
                     {session && <li><Link href="/profile">Profile</Link></li>}
