@@ -2,7 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 
 
-export default function Post({props}) {
+export default function Characters({props}) {
     return (
         <div className={styles['post-card-styling']}>
             <div>

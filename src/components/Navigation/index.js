@@ -24,9 +24,6 @@ export default function Navigation() {
                     <li>
                         <Link href="/locations">Locations</Link>
                     </li>
-                    <li>
-                        <Link href="/">Home</Link>
-                    </li>
                     {session && <li><Link href="/profile">Profile</Link></li>}
                     <li>
                         {session ? <Link href="/" onclick={(e) => logout()}>Logout</Link> : <Link href="/login">Login</Link>}
