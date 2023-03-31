@@ -36,7 +36,7 @@ const BossesPage = () => {
                         OLDEST KIN)</h1>
                 </div>
                 <div className={styles.cucco}>
-                    <img src='hinox.png' className={styles.image}/>
+                    <img src='hinox.png' className={styles.image} alt={"image"}/>
                 </div>
             </div>
 
@@ -45,7 +45,7 @@ const BossesPage = () => {
                     <h1 className={styles.text}>STONE TALUS</h1>
                 </div>
                 <div className={styles.cucco}>
-                    <img src='stonetalus.png' className={styles.image}/>
+                    <img src='stonetalus.png' className={styles.image} alt={"image"}/>
                 </div>
             </div>
         </div>

@@ -1,5 +1,5 @@
 import styles from '../styles/character.module.css'
-export default function IndexPage() {
+export default function CharacterPage() {
     return (
         <div>
             <h1 className={styles.title}>CHARACTERS</h1>

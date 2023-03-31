@@ -1,7 +1,7 @@
 import ZeldaAPI from '@/lib/api/Posts'
 import styles from '../styles/creatures.module.css'
 
-export default function IndexPage({characters}) {
+export default function CreaturesPage({characters}) {
   return (
     <div>
         <h1 className={styles.title}>CREATURES</h1>
